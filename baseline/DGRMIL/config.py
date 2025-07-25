@@ -1,0 +1,36 @@
+import argparse
+def get_config(dataname):
+    parser = argparse.ArgumentParser(description='Train DSMIL on 20x patch features learned by Resnet50')
+    parser.add_argument('--backgrd_thres', default=30, type=int, help='background threshold')
+    parser.add_argument('--num_classes', default=2, type=int, help='Number of output classes [2]')
+    parser.add_argument('--num_workers', default=0, type=int, help='number of workers used in dataloader [4]')
+    parser.add_argument('--feats_size', default=1536, type=int,
+                        help='Dimension of the feature size [512] resnet-50 1024')
+    parser.add_argument('--lr', default=5e-4, type=float, help='Initial learning rate [0.0002]')
+    parser.add_argument('--num_epochs', default=100, type=int, help='Number of total training epochs [40|200]')
+    parser.add_argument('--gpu_index', type=int, nargs='+', default=(0,), help='GPU ID(s) [0]')
+    parser.add_argument('--weight_decay', default=1e-4, type=float, help='Weight decay [5e-3]')
+    parser.add_argument('--model', default='our', type=str, help='MIL model [dsmil]')
+    parser.add_argument('--dropout_patch', default=0.1, type=float, help='Patch dropout rate [0] 0.4')
+    parser.add_argument('--dropout_node', default=0.4, type=float, help='Bag classifier dropout rate [0]')
+    parser.add_argument('--non_linearity', default=1, type=float, help='Additional nonlinear operation [0]')
+    parser.add_argument('--num_cluster', default=5, type=int, help='number of assumped clusters')
+    parser.add_argument('--num_les', default=5, type=int, help='number of representation for normal/lesion')
+    parser.add_argument('--num_normal', default=5, type=int, help='number of representation for normal/lesion')
+    parser.add_argument('--weight_div', default=0.2, type=float, help='weight for block loss default 0.0001')
+    parser.add_argument('--weight_des', default=0.01, type=float, help='weight for block loss default 0.0001')
+    parser.add_argument('--temp', default=0.2, type=float, help='Bag classifier dropout rate [0]')
+    parser.add_argument('--average', type=bool, default=True,
+                        help='Average the score of max-pooling and bag aggregating')
+    parser.add_argument('--seed', default='0', type=int, help='random seed')
+    parser.add_argument('--aggmode', default='mean', type=str, help='aggregation mode')
+    parser.add_argument('--optimizer', default='adamw', type=str, help='aggregation mode')
+    parser.add_argument('--epoch_contrastive', default=200, type=int, help='turn on contrastive learning')
+    parser.add_argument('--epoch_step', default='[100]', type=str)
+    parser.add_argument('--epoch_des', default=10, type=int, help='turn on neg pos descrimination')
+    parser.add_argument('--fold', default='0', type=str, help='fold')
+    parser.add_argument('--L', default=512, type=int)
+    parser.add_argument("--dataname", default=dataname, type=str)
+
+    args = parser.parse_args()
+    return args
