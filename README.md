@@ -60,7 +60,7 @@ Use the pre-trained model for feature preprocessing and build the spatial topolo
 ### Feature Extraction
 
 Features extracted based on GigaPath.
-Please refer to CTransPath: [https://github.com/Xiyue-Wang/TransPath](https://github.com/prov-gigapath/prov-gigapath)
+Please refer to Prov-GigaPath: [https://github.com/Xiyue-Wang/TransPath](https://github.com/prov-gigapath/prov-gigapath)
 
 Feature extraction code reference project: [https://github.com/mahmoodlab/CLAM](https://huggingface.co/prov-gigapath/prov-gigapath)
 
@@ -72,7 +72,7 @@ Feature extraction code reference project: [https://github.com/mahmoodlab/CLAM](
     <img src="https://github.com/panliangrui/AAAI2026/blob/main/liucheng.jpg" width="800" height="400" />
   </a>
 
-Overall workflow of the proposed SMILE approach. We process the given bag through a joint feature representation module to transform them into instance features. These features are then processed through a scale-adaptive attention module to obtain scaled bag-level feature representations. Finally, the final STAS prediction results are obtained through the classifier g.
+The complete workflow for diagnosing STAS from histopathological images. a): Annotation (cross-validation) of histopathological images from lung cancer patients and digitization of WSIs; b): Preprocessing of WSIs, including segmentation, tessellation, and patching; c): Preprocessing of WSI image features, dual-token embedding, feature extraction (including transformer-based instance encoding and MPAA modules), and STAS diagnosis (classification with regularized similarity loss
 
 
 
@@ -87,9 +87,8 @@ This repository provides implementations and comparisons of various MIL-based me
 - **CLAM-SB**: A clustering constraint-based attention MIL method that employs a single attention branch to aggregate instance features and generate a bag-level representation.
 - **CLAM-MB**: The multi-branch version of the CLAM model, computing attention scores for each class separately to produce multiple unique bag-level representations.
 - **DTFD-MIL**: Addresses the challenge of limited WSI samples in MIL by introducing pseudo-bags to virtually enlarge the bag count and implementing a double-tier framework that leverages an attention-based derivation of instance probabilities to effectively utilize intrinsic features.
-- **ACMIL**: Mitigates overfitting by employing multiple branch attention and stochastic top-K instance masking to reduce attention value concentration and capture more discriminative instances in WSI classification.
 - **ILRA**: Incorporates a pathology-specific Low-Rank Constraint for feature embedding and an iterative low-rank attention model for feature aggregation, achieving enhanced performance in gigapixel-sized WSI classification.
-- **DGRMIL**: Models instance diversity by converting instance embeddings into similarities with predefined global vectors via a cross-attention mechanism and further enhances the diversity among these global vectors through positive instance alignment and a determinant point process-based diversified learning paradigm.
+- **DSMIL**: Utilizes a dual-stream architecture, where one stream classifies instances and the other aggregates contextual information for final prediction.
 
 ## Train Models
 ```markdown
