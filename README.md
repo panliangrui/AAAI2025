@@ -1,8 +1,8 @@
 
 
 <div align="center">
-  <a href="(https://github.com/panliangrui/IJCAI25/blob/main/STAS.jpg)">
-    <img src="https://github.com/panliangrui/IJCAI25/blob/main/STAS.jpg" width="800" height="400" />
+  <a href="(https://github.com/panliangrui/AAAI2026/blob/main/STAS.jpg)">
+    <img src="https://github.com/panliangrui/AAAI2026/blob/main/STAS.jpg" width="800" height="400" />
   </a>
 
   <h1>STAS(solid nests, micropapillary clusters, single cells)</h1>
@@ -35,7 +35,7 @@
   </div>
 </div>
 
-# SMILE: a Scale-aware Multiple Instance Learning Method for Multicenter STAS  Lung Lancer Histopathology Diagnosis
+# STAMP: Multi‑pattern Attention‑aware Multiple Instance Learning for STAS Diagnosis in Multi‑center Histopathology Images
 
 ## Table of Contents
 
@@ -59,19 +59,14 @@ Use the pre-trained model for feature preprocessing and build the spatial topolo
 
 ### Feature Extraction
 
-Features extracted based on CTransPath.
-Please refer to CTransPath: https://github.com/Xiyue-Wang/TransPath
+Features extracted based on GigaPath.
+Please refer to CTransPath: [https://github.com/Xiyue-Wang/TransPath](https://github.com/prov-gigapath/prov-gigapath)
 
-Feature extraction code reference project: https://github.com/mahmoodlab/CLAM
-```markdown
-python create_patches_fp.py
-```
-```markdown
-python extract_features_fp.py
-```
+Feature extraction code reference project: [https://github.com/mahmoodlab/CLAM](https://huggingface.co/prov-gigapath/prov-gigapath)
+
 
 ## Models
-**SMILE**
+**STAMP**
 
   <a href="(https://github.com/panliangrui/IJCAI25/blob/main/flow.jpg)">
     <img src="https://github.com/panliangrui/IJCAI25/blob/main/flow.jpg" width="800" height="400" />
