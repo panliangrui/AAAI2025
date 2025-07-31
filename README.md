@@ -5,7 +5,7 @@
     <img src="https://github.com/panliangrui/AAAI2026/blob/main/STAS.jpg" width="800" height="400" />
   </a>
 
-  <h1>STAS(solid nests, micropapillary clusters, single cells)</h1>
+  <h1>STAS(micropapillary clusters, single cells, solid nests)</h1>
 
   <p>
   Anonymous Author et al. is a developer helper.
