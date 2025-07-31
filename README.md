@@ -68,8 +68,8 @@ Feature extraction code reference project: [https://github.com/mahmoodlab/CLAM](
 ## Models
 **STAMP**
 
-  <a href="(https://github.com/panliangrui/IJCAI25/blob/main/flow.jpg)">
-    <img src="https://github.com/panliangrui/IJCAI25/blob/main/flow.jpg" width="800" height="400" />
+  <a href="(https://github.com/panliangrui/AAAI2026/blob/main/liucheng.jpg)">
+    <img src="https://github.com/panliangrui/AAAI2026/blob/main/liucheng.jpg" width="800" height="400" />
   </a>
 
 Overall workflow of the proposed SMILE approach. We process the given bag through a joint feature representation module to transform them into instance features. These features are then processed through a scale-adaptive attention module to obtain scaled bag-level feature representations. Finally, the final STAS prediction results are obtained through the classifier g.
