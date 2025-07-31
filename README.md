@@ -104,8 +104,7 @@ link: https://pan.baidu.com/s/1k5XTvMyP_xO2bd-WRY187A?pwd=fgws password: fgws
 ```
 Please contact the corresponding author or first author by email.
 
-- STAS‑SXH:We provide clinical data on STAS patients, including patient age, gender, stage and protein level expression data.
-- We included WSIs from the Xiangya Second Hospital of Central South University cohort as our internal training and validation dataset. Among the 12,169 patients who underwent lung nodule resection and were histologically confirmed with LUAD between April 2020 and December 2023, 206 individuals with a definitive diagnosis of STAS and 150 individuals without STAS were selected. From these selected cases, we collected a total of 1,290 WSIs (approximately four slides per patient), along with associated clinical data and immunohistochemistry images (e.g., markers such as TTF‑1, CK, CD68).
+- STAS‑SXH: We included WSIs from the Xiangya Second Hospital of Central South University cohort as our internal training and validation dataset. Among the 12,169 patients who underwent lung nodule resection and were histologically confirmed with LUAD between April 2020 and December 2023, 206 individuals with a definitive diagnosis of STAS and 150 individuals without STAS were selected. From these selected cases, we collected a total of 1,290 WSIs (approximately four slides per patient), along with associated clinical data and immunohistochemistry images (e.g., markers such as TTF‑1, CK, CD68).
 
 - STAS‑TXH: We included a cohort from the Third Xiangya Hospital of Central South University, consisting of 304 histopathology slides from 68 lung cancer patients diagnosed with STAS between 2022 and 2023, with each WSI annotated for the presence or absence of STAS.
 
