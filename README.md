@@ -92,7 +92,7 @@ This repository provides implementations and comparisons of various MIL-based me
 
 ## Train Models
 ```markdown
-python manage.py
+python ./baseline/train/manage.py
 ```
 
 
